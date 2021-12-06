@@ -1,0 +1,315 @@
+//font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+
+//variables
+$primaryColor: #2F5D62;
+$secondaryColor: #5E8B7E;
+$tertiaryColor: #A7C4BC;
+$forthColor: #DFEEEA;
+$lightGrey: #EDEDED;
+
+$font:  'Quicksand', sans-serif;
+
+//mixin
+@mixin tombol {
+    display: inline-block;
+    color: white !important;
+    background-color: $primaryColor;
+    border-radius: 2em;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+    border: 1px solid transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+
+//styles
+body {
+    font-family: $font;
+    animation: fade-in 3s;
+}
+
+//navbar 
+nav {
+    background-color: white;
+    box-shadow: 0.2px 0.2px 18px #888888;
+    #navbarNavAltMarkup {
+        .navbar-nav {
+            .nav-link {
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $primaryColor;
+                margin-left: 1.8em;
+                letter-spacing: 1px;
+                color: $primaryColor;
+                &:hover {
+                    color: $tertiaryColor;
+                }
+            }
+        }
+    }
+}
+
+// hero
+.hero {
+    color: $primaryColor;
+    .container {
+        padding-top: 100px;
+        .hero-heading {
+            margin-bottom: 30px;
+            text-align: center;
+            h1 {
+                font-size: 2.5em;
+                font-weight: 700;
+                letter-spacing: 1px;
+                @media (min-width: 992px) {
+                    font-size: 3.5em;
+                }
+            }
+            p{
+                color: grey;
+            }
+            a {
+                @include tombol();
+                cursor: pointer;
+                &:hover {
+                    background-color: white;
+                    border: 1px solid $primaryColor;
+                    color: $primaryColor !important;
+                }
+            }
+            @media (min-width: 992px) {
+                text-align: left;
+                padding-top: 100px;
+            }
+        }
+        @media (min-width:992px) {
+            .image {
+                margin-top: 60px;
+                img {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+.trust {
+    margin-top: 60px;
+    min-height: 100vh;
+    background-image: linear-gradient($lightGrey, $forthColor);
+    padding-bottom: 80px;
+    h1 {
+        color: $primaryColor;
+        text-shadow: 2px 2px $tertiaryColor;
+        font-weight: 700;
+    }
+    .card {
+        color: $primaryColor;
+        margin: 12px 0px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        box-shadow: 0.2px 0.2px 10px $secondaryColor;
+        img {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        .card-body {
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                text-align: center;
+                padding: 3px 0px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        @media (min-width: 992px) {
+            height: 25rem;
+            width: 18rem;
+            margin: 0px;
+        }
+    }
+    @media (min-width: 992px) {
+        margin-top: 100px;
+    }
+}
+
+.faq {
+    margin-top: 40px;
+    min-height: 80vh;
+    h1 {
+        color: $primaryColor;
+        font-weight: 700;
+    }
+    .accordion {
+        .accordion-item {
+            .accordion-body {
+                font-size: 18px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    min-height: 30vh;
+    background-color: $primaryColor;
+    color: white;
+    h4 {
+        font-weight: 700;
+    }
+    ul {
+        padding-left: 0px;
+        list-style: none;
+        li {
+            padding: 5px 0px;
+            a {
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        text-align: left;
+    }
+}
+
+.hours {
+    margin-top: 120px;
+    min-height: 100vh;
+    h1 {
+        color: $primaryColor;
+        font-weight: 700;
+    }
+    .table {
+        width: 90%;
+        margin: auto;
+    }
+    .card {
+        border-radius: 10px;
+        outline: none;
+        .card-body {
+            color: $primaryColor;
+            h6{
+                font-weight: 700;
+                font-size: 1.2em;
+            }
+        }
+    }
+    .card-info {
+        background-color: $forthColor;
+        border: none;
+        box-shadow: 5px 5px 10px $secondaryColor;
+    }
+    .reservasi {
+        margin-top: 60px;
+        .image-appointment {
+            img {
+                max-width: 100%;
+                @media (min-width: 992px) {
+                    transform: scale(0.7);
+                }
+            }
+        }
+        .reservation-content {
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+            .contact-reservation {
+                a {
+                    i {
+                        font-size: 25px;
+                        color: $primaryColor;
+                        padding-right: 8px;
+                        &:hover {
+                            color: $tertiaryColor;
+                        }
+                    }
+                }
+                h1 {
+                    font-weight: 700;
+                    color: $primaryColor;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+.article, .aboutus {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    .image-scale img {
+        transform: scale(0.8);
+    }
+    .article-heading {
+        color: $primaryColor;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .article-content {
+        margin: 70px 0px;
+        .card {
+            box-shadow: 5px 10px 18px #888888;
+            border-radius: 8px;
+            height: 100%;
+            cursor: pointer;
+            width: 90%;
+            margin: 12px auto;
+            img {
+                transform: scale(0.8);
+                transition: 0.5s;
+            }
+            &:hover img {
+                transform: scale(1);
+            }
+            .card-body {
+                .btn {
+                    background-color: $primaryColor;
+                    color: white;
+                    border: 1px solid transparent;
+                    outline: none;
+                    &:hover {
+                        background-color: white;
+                        color: $primaryColor;
+                        border: 1px solid $primaryColor;
+                    }
+                }
+            }
+            @media (min-width:992px) {
+                width: 100%;
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}

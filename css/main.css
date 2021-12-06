@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+  -webkit-animation: fade-in 3s;
+          animation: fade-in 3s;
+}
+
+nav {
+  background-color: white;
+  -webkit-box-shadow: 0.2px 0.2px 18px #888888;
+          box-shadow: 0.2px 0.2px 18px #888888;
+}
+
+nav #navbarNavAltMarkup .navbar-nav .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2F5D62;
+  margin-left: 1.8em;
+  letter-spacing: 1px;
+  color: #2F5D62;
+}
+
+nav #navbarNavAltMarkup .navbar-nav .nav-link:hover {
+  color: #A7C4BC;
+}
+
+.hero {
+  color: #2F5D62;
+}
+
+.hero .container {
+  padding-top: 100px;
+}
+
+.hero .container .hero-heading {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero .container .hero-heading h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 992px) {
+  .hero .container .hero-heading h1 {
+    font-size: 3.5em;
+  }
+}
+
+.hero .container .hero-heading p {
+  color: grey;
+}
+
+.hero .container .hero-heading a {
+  display: inline-block;
+  color: white !important;
+  background-color: #2F5D62;
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.hero .container .hero-heading a:hover {
+  background-color: white;
+  border: 1px solid #2F5D62;
+  color: #2F5D62 !important;
+}
+
+@media (min-width: 992px) {
+  .hero .container .hero-heading {
+    text-align: left;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero .container .image {
+    margin-top: 60px;
+  }
+  .hero .container .image img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.trust {
+  margin-top: 60px;
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DFEEEA));
+  background-image: linear-gradient(#EDEDED, #DFEEEA);
+  padding-bottom: 80px;
+}
+
+.trust h1 {
+  color: #2F5D62;
+  text-shadow: 2px 2px #A7C4BC;
+  font-weight: 700;
+}
+
+.trust .card {
+  color: #2F5D62;
+  margin: 12px 0px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0.2px 0.2px 10px #5E8B7E;
+          box-shadow: 0.2px 0.2px 10px #5E8B7E;
+}
+
+.trust .card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.trust .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding: 3px 0px;
+}
+
+.trust .card .card-body p {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .trust .card {
+    height: 25rem;
+    width: 18rem;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .trust {
+    margin-top: 100px;
+  }
+}
+
+.faq {
+  margin-top: 40px;
+  min-height: 80vh;
+}
+
+.faq h1 {
+  color: #2F5D62;
+  font-weight: 700;
+}
+
+.faq .accordion .accordion-item .accordion-body {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer {
+  text-align: center;
+  min-height: 30vh;
+  background-color: #2F5D62;
+  color: white;
+}
+
+.footer h4 {
+  font-weight: 700;
+}
+
+.footer ul {
+  padding-left: 0px;
+  list-style: none;
+}
+
+.footer ul li {
+  padding: 5px 0px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    text-align: left;
+  }
+}
+
+.hours {
+  margin-top: 120px;
+  min-height: 100vh;
+}
+
+.hours h1 {
+  color: #2F5D62;
+  font-weight: 700;
+}
+
+.hours .table {
+  width: 90%;
+  margin: auto;
+}
+
+.hours .card {
+  border-radius: 10px;
+  outline: none;
+}
+
+.hours .card .card-body {
+  color: #2F5D62;
+}
+
+.hours .card .card-body h6 {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.hours .card-info {
+  background-color: #DFEEEA;
+  border: none;
+  -webkit-box-shadow: 5px 5px 10px #5E8B7E;
+          box-shadow: 5px 5px 10px #5E8B7E;
+}
+
+.hours .reservasi {
+  margin-top: 60px;
+}
+
+.hours .reservasi .image-appointment img {
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .hours .reservasi .image-appointment img {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+.hours .reservasi .reservation-content {
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .hours .reservasi .reservation-content {
+    text-align: left;
+  }
+}
+
+.hours .reservasi .reservation-content .contact-reservation a i {
+  font-size: 25px;
+  color: #2F5D62;
+  padding-right: 8px;
+}
+
+.hours .reservasi .reservation-content .contact-reservation a i:hover {
+  color: #A7C4BC;
+}
+
+.hours .reservasi .reservation-content .contact-reservation h1 {
+  font-weight: 700;
+  color: #2F5D62;
+  letter-spacing: 1px;
+}
+
+.article, .aboutus {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.article .image-scale img, .aboutus .image-scale img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.article .article-heading, .aboutus .article-heading {
+  color: #2F5D62;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.article .article-content, .aboutus .article-content {
+  margin: 70px 0px;
+}
+
+.article .article-content .card, .aboutus .article-content .card {
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
+  border-radius: 8px;
+  height: 100%;
+  cursor: pointer;
+  width: 90%;
+  margin: 12px auto;
+}
+
+.article .article-content .card img, .aboutus .article-content .card img {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.article .article-content .card:hover img, .aboutus .article-content .card:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.article .article-content .card .card-body .btn, .aboutus .article-content .card .card-body .btn {
+  background-color: #2F5D62;
+  color: white;
+  border: 1px solid transparent;
+  outline: none;
+}
+
+.article .article-content .card .card-body .btn:hover, .aboutus .article-content .card .card-body .btn:hover {
+  background-color: white;
+  color: #2F5D62;
+  border: 1px solid #2F5D62;
+}
+
+@media (min-width: 992px) {
+  .article .article-content .card, .aboutus .article-content .card {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.reveal {
+  position: relative;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+}
+
+.reveal.active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
